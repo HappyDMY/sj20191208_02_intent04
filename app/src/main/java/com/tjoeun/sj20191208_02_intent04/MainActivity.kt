@@ -40,5 +40,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
+
+        kakaoAppBtn.setOnClickListener {
+//            중요 market://details?부터는 플레이 스토어 링크
+            val uri = Uri.parse("market://details?id=com.kakao.talk&hl=ko")
+            val intent = Intent(Intent.ACTION_VIEW,uri)
+            startActivity(intent)
+        }
+
+
+
+
     }
 }
