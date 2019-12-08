@@ -48,8 +48,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        googleMapBtn.setOnClickListener {
+            val uri = Uri.parse("geo:37.569563, 126.984636")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
 
-
+        }
 
     }
 }
