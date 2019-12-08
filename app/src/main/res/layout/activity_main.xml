@@ -21,5 +21,26 @@
         android:layout_height="wrap_content"
         android:text="실제 전화걸기"
         />
+    <EditText
+        android:id="@+id/smsNumEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="문자를 입력받을 사람 번호"
+        android:inputType="phone"
+        />
+
+    <Button
+        android:id="@+id/smsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문자 전송 화면 (입력한 번호로)"
+        />
+
+    <Button
+        android:id="@+id/naverBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Naver 화면으로 보내기"
+        />
 
 </LinearLayout>
